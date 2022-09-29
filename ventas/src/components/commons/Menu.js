@@ -1,11 +1,12 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Menu = () =>{
     return (
         <nav className="panel">
             <p className="panel-heading">Menu</p>
             <div className="panel-bloc">
-                <a href="/" className="button is-fullwidth">
+                <Link to="/" className="button is-fullwidth">
 
                     <span className="icon">
                         <i className="fas fa-home"></i>
@@ -15,11 +16,11 @@ const Menu = () =>{
                         Inicio
                     </span>
 
-                </a>
+                </Link>
             </div>
 
             <div className="panel-bloc">
-                <a href="/" className="button is-fullwidth">
+                <Link to="/Clientes" className="button is-fullwidth">
 
                     <span className="icon">
                         <i className="fas fa-users"></i>
@@ -29,7 +30,7 @@ const Menu = () =>{
                         Clientes
                     </span>
 
-                </a>
+                </Link>
             </div>
         </nav>
     );
